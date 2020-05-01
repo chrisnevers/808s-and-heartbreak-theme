@@ -1,0 +1,31 @@
+{
+	"name": "808s-and-heartbreak-theme",
+	"displayName": "808s & Heartbreak Theme",
+	"publisher": "chrisnevers",
+	"repository": {
+		"url": "http://github.com/chrisnevers/808s-and-heartbreak-theme"
+	},
+	"description": "An 808s & Heartbreak inspired theme.",
+	"version": "0.7.0",
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"icon": "images/icon.png",
+	"categories": [ "Themes" ],
+	"contributes": {
+		"themes": [
+			{
+				"label": "808s & Heartbreak Theme",
+				"uiTheme": "vs",
+				"path": "./themes/808s-and-heartbreak-theme.json"
+			}
+		],
+		"grammars": [
+			{
+				"path": "./syntaxes/inject.json",
+				"scopeName": "todo-comment.injection",
+				"injectTo": [ "source.ocaml", "source.java", "source.haskell" ]
+			}
+		]
+	}
+}
